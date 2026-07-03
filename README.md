@@ -8,21 +8,25 @@ Everything runs through plain `curl` + `jq` against
 
 ## Install
 
-Drop `SKILL.md` into any OpenClaw skill root:
+Point OpenClaw at this repo as an extra skills root, so it picks up
+`skills/hpe-ilo/SKILL.md` (and any future skills added here):
 
 ```bash
-# personal — visible to all agents on this machine
-mkdir -p ~/.openclaw/skills/hpe-ilo
-curl -fsSL https://raw.githubusercontent.com/eelcoornd/hpe-ilo-skill/main/SKILL.md \
-  -o ~/.openclaw/skills/hpe-ilo/SKILL.md
+git clone https://github.com/eelcoornd/hpe-ilo-skill.git ~/hpe-ilo-skill
 
+# Add to ~/.openclaw/openclaw.json
+#   "skills": { "load": { "extraDirs": ["~/hpe-ilo-skill/skills"] } }
+
+openclaw gateway restart
 openclaw skills list | grep hpe-ilo
 ```
 
-Or clone the repo directly:
+Or install just this one skill in a standard skill root:
 
 ```bash
-git clone https://github.com/eelcoornd/hpe-ilo-skill.git ~/.openclaw/skills/hpe-ilo
+mkdir -p ~/.openclaw/skills/hpe-ilo
+curl -fsSL https://raw.githubusercontent.com/eelcoornd/hpe-ilo-skill/main/skills/hpe-ilo/SKILL.md \
+  -o ~/.openclaw/skills/hpe-ilo/SKILL.md
 ```
 
 ## Configure
