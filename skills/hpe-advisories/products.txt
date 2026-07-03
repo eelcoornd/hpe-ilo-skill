@@ -1,1 +1,68 @@
+# HPE product keywords to watch for security advisories.
+# One per line. Lines starting with # are ignored. Case-insensitive.
+# Uncomment the families you own; keep the list tight — every entry is
+# one NVD API call (rate-limited to 5/30s unauthenticated).
+
+# ─── Management / firmware ─────────────────────────────────────────────
 iLO
+# Integrated Lights-Out (iLO 4/5/6) — BMC firmware CVEs
+# OneView
+# Synergy Composer
+# Superdome Flex RMC
+# Moonshot iLO Chassis Manager
+
+# ─── Rack & tower servers ──────────────────────────────────────────────
+# ProLiant
+# Alletra Server           (Gen11 compute, formerly ProLiant DL/ML)
+# Cray XD
+# Apollo                   (dense HPC / AI)
+# Edgeline                 (rugged edge)
+# MicroServer
+
+# ─── Blade / composable ────────────────────────────────────────────────
+# Synergy
+# BladeSystem              (legacy c-Class)
+# Superdome                (mission-critical / Superdome Flex)
+
+# ─── Networking (Aruba / HPE Networking) ───────────────────────────────
+# Aruba
+# ArubaOS
+# ArubaOS-CX
+# ArubaOS-Switch
+# ClearPass
+# Aruba Central
+# Aruba Instant
+
+# ─── Storage: primary ──────────────────────────────────────────────────
+# Alletra                  (Alletra MP, 6000, 9000, dHCI)
+# Primera
+# 3PAR
+# Nimble                   (Nimble Storage arrays)
+# XP                       (XP8 mission-critical)
+
+# ─── Storage: entry / hybrid ───────────────────────────────────────────
+# MSA                      (MSA 1060/2060/2062 entry SAN)
+# StoreEasy                (Windows NAS gateways)
+# StoreOnce                (dedup backup targets)
+# StoreEver                (tape libraries)
+# SimpliVity               (hyperconverged)
+
+# ─── SAN switching ─────────────────────────────────────────────────────
+# SN2010M
+# SN2100M
+# SN2700M
+# Brocade
+
+# ─── Software / cloud ──────────────────────────────────────────────────
+# GreenLake
+# Ezmeral                  (Ezmeral Data Fabric, Runtime, Unified Analytics)
+# InfoSight
+# Serviceguard
+# Data Protector
+# StoreOnce Catalyst
+# Cohesity DataProtect for HPE   (co-branded backup)
+
+# ─── HPC / AI ──────────────────────────────────────────────────────────
+# Cray
+# Slingshot                (Cray interconnect)
+# HPE Machine Learning Development Environment
