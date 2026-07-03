@@ -1,0 +1,19 @@
+# HPE Software Delivery Repository (SDR) firmware channels to watch.
+# One repo path per line, relative to https://downloads.linux.hpe.com/SDR/repo/
+# Uncomment the ones matching your fleet. All are public, no HPE login needed.
+
+# ─── ProLiant firmware pack (fwpp) — per generation ────────────────────
+# fwpp-g7/current           # Gen7  (legacy, EOL)
+# fwpp-gen8/current         # Gen8  (EOL support extended)
+# fwpp-gen9/current         # Gen9
+# fwpp-gen10/current        # Gen10 / Gen10 Plus
+fwpp-gen11/current          # Gen11
+# fwpp-gen12/current        # Gen12 (Alletra Server)
+# fwpp/current              # umbrella (all generations mixed)
+
+# ─── Management / agents ───────────────────────────────────────────────
+# mcp/current               # Management Component Pack (AMS, snmp-agents, etc.)
+# spp/current               # Service Pack for ProLiant metadata
+
+# ─── Storage / SAN ─────────────────────────────────────────────────────
+# stm/current               # Smart Storage Administrator / storage controller fw

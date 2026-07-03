@@ -7,6 +7,7 @@ HPE gear.
 |-------|--------------|
 | [`hpe-ilo`](skills/hpe-ilo/) | Drive HPE iLO 4/5/6 servers via the Redfish REST API (power, health, thermals, logs, virtual media, firmware). |
 | [`hpe-advisories`](skills/hpe-advisories/) | Daily digest of new HPE security advisories from NVD, filtered by a user-editable product list. |
+| [`hpe-firmware`](skills/hpe-firmware/) | Watch HPE's public SDR for new ProLiant firmware packages (BIOS, iLO, NIC, controllers) across selected fwpp channels. |
 
 Everything runs through plain `curl` + `jq` — no SDKs, no vendored client
 libraries, no Playwright.
